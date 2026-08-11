@@ -1,0 +1,14 @@
+{
+  "serverId": "com.jetbrains/mcp-server",
+  "date": "2026-08-11",
+  "metadata": {
+    "name": "JetBrains MCP Server",
+    "description": "Official MCP server bundled with IntelliJ-based IDEs (enabled by default since version 2025.2), exposing IDE tools — file editing, code analysis, debugging, running configurations, terminal, and VCS — to external MCP clients such as Claude Code, Codex, and VS Code."
+  },
+  "selfPublished": true,
+  "config": {
+    "type": "stdio",
+    "command": "npx",
+    "args": ["-y", "@jetbrains/mcp-proxy"]
+  }
+}

@@ -1,6 +1,6 @@
 # AI Registry — JetBrains (Inferred)
 
-> **Inferred vendor repository.** This repo is maintained by the [AI Registry](https://github.com/eclipsefdn-ai-registry/ai-registry-core) project, not by JetBrains. It pre-seeds the registry with Agent Skills published by JetBrains at [github.com/JetBrains/skills](https://github.com/JetBrains/skills), [github.com/JetBrains/teamcity-cli](https://github.com/JetBrains/teamcity-cli), and [github.com/Kotlin/kotlin-agent-skills](https://github.com/Kotlin/kotlin-agent-skills).
+> **Inferred vendor repository.** This repo is maintained by the [AI Registry](https://github.com/eclipsefdn-ai-registry/ai-registry-core) project, not by JetBrains. It pre-seeds the registry with Agent Skills published by JetBrains at [github.com/JetBrains/skills](https://github.com/JetBrains/skills), [github.com/JetBrains/teamcity-cli](https://github.com/JetBrains/teamcity-cli), and [github.com/Kotlin/kotlin-agent-skills](https://github.com/Kotlin/kotlin-agent-skills), plus the connection config for JetBrains' bundled MCP Server.
 >
 > *This entry is based solely on information published through JetBrains' official public channels. JetBrains has not endorsed, approved or validated this listing, and is not necessarily participating in the AI Registry.*
 
@@ -14,7 +14,11 @@ Skill approvals scoped to skills that are actually attributed to JetBrains, not 
 
 Each approval file uses glob or explicit multi-path source paths so newly published skills are picked up automatically on the next registry consolidation.
 
-No MCP server or Agent Plugin approval is included: JetBrains' current MCP offering is a closed-source, bundled IDE plugin (no public source repo to point a `serverId`/source at — its standalone predecessor repos, `JetBrains/mcp-jetbrains` and `JetBrains/mcp-server-plugin`, are both deprecated), and no agent-plugins.org-conformant plugin (`plugin.json` manifest) was found published by JetBrains.
+MCP approval for:
+
+- **JetBrains MCP Server** (`com.jetbrains/mcp-server`) — the MCP server bundled with IntelliJ-based IDEs (enabled by default since 2025.2). It isn't listed in the official Anthropic/modelcontextprotocol.io registry, so this approval supplies its own `metadata` (fallback name/description) and a generic `config` instead of relying on registry lookup — `mcpRegistryVerified` will read `false`, which the schema treats as a warning, not a blocker. The config is the officially published stdio connection (`npx -y @jetbrains/mcp-proxy`, from the `@jetbrains` npm scope), which JetBrains' own docs still point to as the way to wire up clients like Claude Desktop or VS Code that aren't auto-detected by the in-IDE setup flow — even though its original standalone GitHub repos (`JetBrains/mcp-jetbrains`, `JetBrains/mcp-server-plugin`) are archived/deprecated in favor of the bundled plugin. Marked `selfPublished: true` since the plugin (JetBrains Marketplace, verified publisher "JetBrains s.r.o.") and the npm package are both first-party JetBrains artifacts.
+
+No Agent Plugin approval is included: no agent-plugins.org-conformant plugin (`plugin.json` manifest) was found published by JetBrains.
 
 ## Documentation
 

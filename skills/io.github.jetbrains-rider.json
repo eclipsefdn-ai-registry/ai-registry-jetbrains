@@ -1,0 +1,8 @@
+{
+  "skillId": "io.github.jetbrains-rider",
+  "date": "2026-10-02",
+  "source": {
+    "url": "https://github.com/JetBrains/rider-skills.git",
+    "path": "skills/*"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "skillId": "io.github.jetbrains-teamcity-skills",
+  "date": "2026-10-02",
+  "source": {
+    "url": "https://github.com/JetBrains/teamcity-skills.git",
+    "path": ["skills/teamcity-cli", "skills/teamcity-first-green-build", "skills/teamcity-intellij"]
+  }
+}

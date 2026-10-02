@@ -1,0 +1,8 @@
+{
+  "skillId": "io.github.jetbrains-phpstorm",
+  "date": "2026-10-02",
+  "source": {
+    "url": "https://github.com/JetBrains/phpstorm-claude-marketplace.git",
+    "path": "skills/*"
+  }
+}

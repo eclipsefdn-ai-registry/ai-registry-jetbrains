@@ -1,0 +1,8 @@
+{
+  "skillId": "io.github.jetbrains-datalore",
+  "date": "2026-10-02",
+  "source": {
+    "url": "https://github.com/JetBrains/datalore-skills.git",
+    "path": "skills/*"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "serverId": "com.jetbrains/teamcity-mcp",
+  "date": "2026-10-09",
+  "metadata": {
+    "name": "TeamCity MCP Plugin",
+    "description": "Official TeamCity server plugin that turns a TeamCity server into an MCP server, exposing the TeamCity REST API, build logs and pipeline management to MCP clients over a streamable-http endpoint at /app/mcp. Requires TeamCity 2026.1 or later and a TeamCity bearer token."
+  },
+  "selfPublished": true
+}

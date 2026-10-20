@@ -1,0 +1,8 @@
+{
+  "skillId": "io.github.jetbrains-youtrack-cli",
+  "date": "2026-10-16",
+  "source": {
+    "url": "https://github.com/JetBrains/youtrack-cli.git",
+    "path": ".agents/skills/youtrack-cli"
+  }
+}

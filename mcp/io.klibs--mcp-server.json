@@ -1,0 +1,13 @@
+{
+  "serverId": "io.klibs/mcp-server",
+  "date": "2026-10-02",
+  "metadata": {
+    "name": "klibs.io MCP Server",
+    "description": "Remote MCP server exposing klibs.io — JetBrains' catalog of Kotlin Multiplatform libraries — so agents can search KMP projects, look up the latest published package versions, and verify target/platform support. Publicly hosted, no authentication required."
+  },
+  "selfPublished": true,
+  "config": {
+    "type": "streamable-http",
+    "url": "https://api.klibs.io/mcp"
+  }
+}

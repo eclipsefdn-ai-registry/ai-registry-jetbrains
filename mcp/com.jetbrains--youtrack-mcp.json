@@ -1,0 +1,9 @@
+{
+  "serverId": "com.jetbrains/youtrack-mcp",
+  "date": "2026-10-16",
+  "metadata": {
+    "name": "YouTrack Remote MCP Server",
+    "description": "MCP server built into YouTrack (since 2025.3) that gives AI tools real-time access to read and update issues, articles and projects, served at /mcp on every YouTrack Cloud and Server site. Authenticates via OAuth (CIMD or a manually registered client) or a permanent token in the Authorization header."
+  },
+  "selfPublished": true
+}

@@ -1,0 +1,16 @@
+{
+  "serverId": "com.jetbrains/compose-hot-reload-mcp",
+  "date": "2026-11-20",
+  "metadata": {
+    "name": "Compose Hot Reload MCP Server",
+    "description": "MCP server built into Compose Hot Reload (Compose Multiplatform 1.12.0+) that lets agents interact with a running Compose desktop application: trigger hot reloads, take screenshots, read the semantic tree and runtime logs, and simulate clicks, typing and scrolling. Started through the project's hotMcpServer Gradle task."
+  },
+  "selfPublished": true,
+  "config": {
+    "type": "stdio",
+    "command": "./gradlew",
+    "args": ["--no-daemon", "--quiet", "--console=plain", "hotMcpServer"],
+    "serverKey": "compose-hot-reload",
+    "notes": "Run from the root of a Compose Multiplatform project (1.12.0 or later) that applies the Compose Hot Reload Gradle plugin; on Windows use gradlew.bat. If a module defines several JVM targets, replace hotMcpServer with the fully qualified task, for example :composeApp:hotMcpServerJvm."
+  }
+}

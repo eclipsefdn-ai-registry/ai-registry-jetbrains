@@ -1,0 +1,8 @@
+{
+  "skillId": "io.github.jetbrains-exposed",
+  "date": "2026-11-20",
+  "source": {
+    "url": "https://github.com/JetBrains/Exposed.git",
+    "path": ".claude/skills/migrate-to-1.0"
+  }
+}
